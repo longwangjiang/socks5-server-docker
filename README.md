@@ -18,3 +18,11 @@ docker build --rm --no-cache -t sock5-server .
 ```bash
 docker run --restart unless-stopped --name sock5-server -p 1080:1080 -d sock5-server
 ```
+## 别人做好的镜像直接pull也行
+```
+docker pull teamide/sock5-server:latest
+```
+然后
+```
+docker run --restart unless-stopped --name sock5-server -p 1080:1080 -d teamide/sock5-server
+```
